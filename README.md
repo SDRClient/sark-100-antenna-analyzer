@@ -40,13 +40,19 @@ cd build
 qmake -spec macx-g++ -o Makefile ../analyzer/analyzer.pro
 make
 ```
+
+```
 brew install qt
+```
 
 => ./configure --prefix=/usr/local/Cellar/pkg-config/0.28 --disable-host-tool --with-internal-glib --wit
 Error: Permission denied - /Users/<YOURNAME>/Library/Logs/Homebrew/pkg-config
 
 if catch Error,then run:
+```
 sudo chown -R <YOURNAME> /Users/<YOURNAME>/Library/Logs/Homebrew
+```
+by @BI7JTA
 
 You can then run the program by running `open analyzer.app`.
 
